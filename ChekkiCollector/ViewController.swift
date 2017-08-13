@@ -26,6 +26,8 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         do {
+            //GRAB ALL THE Chekki objects in our database and store them in chekkis as an array 
+            
             chekkis = try context.fetch(Chekki.fetchRequest())
             print(chekkis)
             tableView.reloadData()
@@ -44,6 +46,17 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         cell.textLabel?.text = chekki.title
         cell.imageView?.image = UIImage(data: chekki.image as! Data)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let chekki = chekkis[indexPath.row]
+        performSegue(withIdentifier: "chekkiSegue", sender: chekki)
+    }
+    
+    //Go and get chekki from the ChekkiViewController and assign it as Chekki
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! ChekkiViewController
+        nextVC.chekki = sender as? Chekki
     }
 
 }

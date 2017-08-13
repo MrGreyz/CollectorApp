@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="KKC-RH-mcy">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="kjX-iZ-eYY">
                             <connections>
-                                <segue destination="jkI-29-Enl" kind="show" id="zrj-DY-vGI"/>
+                                <segue destination="jkI-29-Enl" kind="show" identifier="chekkiSegue" id="zrj-DY-vGI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -82,6 +82,13 @@
                                     <action selector="addTapped:" destination="jkI-29-Enl" eventType="touchUpInside" id="y3l-9P-mUK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sV9-W7-Wni">
+                                <rect key="frame" x="165" y="454" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="jkI-29-Enl" eventType="touchUpInside" id="Qo1-oC-WkA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -89,6 +96,7 @@
                             <constraint firstItem="Pbw-PG-kMN" firstAttribute="top" secondItem="xtG-si-VKZ" secondAttribute="bottom" constant="20" id="HmC-uV-yFa"/>
                             <constraint firstItem="Pbw-PG-kMN" firstAttribute="centerX" secondItem="kH1-Jn-cQJ" secondAttribute="centerX" id="J7f-nP-ThD"/>
                             <constraint firstItem="NPf-tl-Ne6" firstAttribute="top" secondItem="Pbw-PG-kMN" secondAttribute="bottom" constant="23" id="Mgw-1F-JqV"/>
+                            <constraint firstItem="sV9-W7-Wni" firstAttribute="top" secondItem="Z6H-w2-iOw" secondAttribute="bottom" constant="8" id="Qab-Yp-POd"/>
                             <constraint firstItem="NPf-tl-Ne6" firstAttribute="centerX" secondItem="kH1-Jn-cQJ" secondAttribute="centerX" id="Reg-Yy-bHy"/>
                             <constraint firstItem="NPf-tl-Ne6" firstAttribute="centerX" secondItem="kH1-Jn-cQJ" secondAttribute="centerX" id="dIy-Cd-Zjy"/>
                             <constraint firstItem="Z6H-w2-iOw" firstAttribute="centerX" secondItem="kH1-Jn-cQJ" secondAttribute="centerX" id="gN7-hy-Yqt"/>
@@ -110,7 +118,9 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="Z6H-w2-iOw" id="b57-U1-mTB"/>
                         <outlet property="chekkiImageView" destination="Pbw-PG-kMN" id="gv9-lg-Lb7"/>
+                        <outlet property="deleteButton" destination="sV9-W7-Wni" id="pfH-D7-ZP0"/>
                         <outlet property="titleTextField" destination="NPf-tl-Ne6" id="DBT-Ou-LBq"/>
                     </connections>
                 </viewController>

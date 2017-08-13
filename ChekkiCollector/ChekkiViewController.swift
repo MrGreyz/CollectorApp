@@ -11,6 +11,10 @@ import UIKit
 class ChekkiViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
   
+    @IBOutlet weak var deleteButton: UIButton!
+    
+    @IBOutlet weak var addUpdateButton: UIButton!
+    
     @IBOutlet weak var chekkiImageView: UIImageView!
     
     @IBOutlet weak var titleTextField: UITextField!
@@ -25,6 +29,15 @@ class ChekkiViewController: UIViewController, UINavigationControllerDelegate, UI
         super.viewDidLoad()
 
         imagePicker.delegate = self
+        
+        if (chekki != nil) {
+            chekkiImageView.image = UIImage(data: chekki!.image as! Data)
+            titleTextField.text = chekki!.title
+            addUpdateButton.setTitle("Update", for: .normal)
+        } else {
+            //If the game doesnt exist
+            deleteButton.isHidden = true
+        }
     }
 
    
