@@ -13,6 +13,8 @@
 		D28A3CB61F408A5400F1DE4A /* ChekkiCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D28A3CB41F408A5400F1DE4A /* ChekkiCollector.xcdatamodeld */; };
 		D28A3CB81F408A5400F1DE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28A3CB71F408A5400F1DE4A /* Assets.xcassets */; };
 		D28A3CBB1F408A5400F1DE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28A3CB91F408A5400F1DE4A /* LaunchScreen.storyboard */; };
+		D28A3CC31F40907300F1DE4A /* T7_Eliza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D28A3CC21F40907300F1DE4A /* T7_Eliza.jpg */; };
+		D28A3CC51F40943600F1DE4A /* ChekkiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A3CC41F40943600F1DE4A /* ChekkiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D28A3CB71F408A5400F1DE4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D28A3CBA1F408A5400F1DE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D28A3CBC1F408A5400F1DE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D28A3CC21F40907300F1DE4A /* T7_Eliza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = T7_Eliza.jpg; path = ../../T7_Eliza.jpg; sourceTree = "<group>"; };
+		D28A3CC41F40943600F1DE4A /* ChekkiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChekkiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				D28A3CAD1F408A5400F1DE4A /* AppDelegate.swift */,
 				D28A3CAF1F408A5400F1DE4A /* ViewController.swift */,
+				D28A3CC21F40907300F1DE4A /* T7_Eliza.jpg */,
 				D28A3CB11F408A5400F1DE4A /* Main.storyboard */,
+				D28A3CC41F40943600F1DE4A /* ChekkiViewController.swift */,
 				D28A3CB71F408A5400F1DE4A /* Assets.xcassets */,
 				D28A3CB91F408A5400F1DE4A /* LaunchScreen.storyboard */,
 				D28A3CBC1F408A5400F1DE4A /* Info.plist */,
@@ -129,6 +135,7 @@
 			files = (
 				D28A3CBB1F408A5400F1DE4A /* LaunchScreen.storyboard in Resources */,
 				D28A3CB81F408A5400F1DE4A /* Assets.xcassets in Resources */,
+				D28A3CC31F40907300F1DE4A /* T7_Eliza.jpg in Resources */,
 				D28A3CB31F408A5400F1DE4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +150,7 @@
 				D28A3CB01F408A5400F1DE4A /* ViewController.swift in Sources */,
 				D28A3CB61F408A5400F1DE4A /* ChekkiCollector.xcdatamodeld in Sources */,
 				D28A3CAE1F408A5400F1DE4A /* AppDelegate.swift in Sources */,
+				D28A3CC51F40943600F1DE4A /* ChekkiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
